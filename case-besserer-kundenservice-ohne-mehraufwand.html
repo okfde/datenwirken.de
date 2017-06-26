@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>datenwirken.de - offene daten in der praxis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#009588">
+    <meta name="msapplication-navbutton-color" content="#009588">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#009588">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="static/vendor/normalize.css">
+    <link rel="stylesheet" href="static/vendor/slick.css">
+    <link rel="stylesheet" href="static/vendor/prism.css"/>
+    <link rel="stylesheet" href="static/styles/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- needed up here because of scripts in child templates -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="icon" type="image/ico" href="static/img/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="static/img/favicon-16x16.png"/>
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@snv_berlin" />
+
+    
+        
+    <meta name="twitter:title" content="Besserer Kunden&shy;service ohne Mehr&shy;aufwand" />
+    <meta name="twitter:description" content="&#214;ffentliche Verkehrs&shy;betriebe & Open Data" />
+    <meta name="twitter:image" content="http://datenwirken.de/static/img/banners/sm/tfl.jpg" />
+
+    <meta property="og:title" content="Besserer Kunden&shy;service ohne Mehr&shy;aufwand" />
+    <meta property="og:description" content="&#214;ffentliche Verkehrs&shy;betriebe & Open Data" />
+    <meta property="og:image" content="http://datenwirken.de/static/img/banners/sm/tfl.jpg" />
+
+    
+
+</head>
+
+<body id="case-study-page">
+
+
+<!-- header goes here -->
+<header class="b-top-nav m-transparent m-fixed">
+
+    <div class="e-nav-group m-left e-social-media dropdown">
+        <div class="e-nav-item"><i class="e-social-media-item fa fa-twitter"></i></div>
+        <ul class="m-transparent">
+            <li>
+                <a href="https://twitter.com/snv_berlin" class="e-nav-item" target="_blank">
+                    <i class="e-social-media-item fa fa-twitter"></i>snv_berlin
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/okfde" class="e-nav-item" target="_blank">
+                    <i class="e-social-media-item fa fa-twitter"></i>okfde
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    
+<div class="e-nav-group m-right hide-for-small-only">
+    <a href="index.html" class="e-nav-item" id="nav-about">Home</a>
+    <a href="supporters.html" class="e-nav-item" id="nav-supporters">Befürworter</a>
+    <a href="about.html" class="e-nav-item">
+        Hintergrund
+    </a>
+</div>
+<div class="e-nav-group m-right show-for-small-only dropdown">
+    <a class="e-nav-item activate-dropdown"><i class="fa fa-ellipsis-h"></i></a>
+    <ul class="m-transparent">
+        <li>
+            <a href="./index.html" class="e-nav-item">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="supporters.html" class="e-nav-item">
+                Befürworter
+            </a>
+        </li>
+        <li>
+            <a href="about.html" class="e-nav-item">
+                Hintergrund
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <a class="e-logo" href="./">
+        <img src="static/img/datenwirken_logo.svg" alt="datenwirken.de - Offene Daten in der Praxis"/>
+    </a>
+</header>
+
+
+
+
+
+
+<main class="case-study-page" role="main">
+
+    <div class="b-top-section" style="background-image: url(./static/img/banners/sm/tfl.jpg)">
+        <div class="e-shade"></div>
+        <hgroup class="e-titles">
+            <h1 class="e-main-title">Besserer Kunden&shy;service ohne Mehr&shy;aufwand</h1>
+            <h2 class="e-tagline">Öffentliche Verkehrs&shy;betriebe & Open Data</h2>
+            <h4>Transport for London (UK)</h4>
+            <div class="e-tags hide-for-small-only">
+                <div class="e-left">
+                    <p class="">Wirkung</p>
+                    <p class="">Bereich</p>
+                    <!--<p class="">Ort</p>-->
+                </div>
+                <div class="e-right">
+                    <p>
+                        Probleme lösen
+                        
+                    </p>
+                    <p>
+                        Transport
+                        
+                    </p>
+                    <!--<p></p>-->
+                </div>
+            </div>
+        </hgroup>
+        <div id="download-button">
+            <a href="./static/files/TransportforLondonTfL.pdf" class="b-button m-public" target="_blank">Report herunterladen<i
+                    class="material-icons m-space">file_download</i></a>
+        </div>
+        
+    </div>
+
+    <div class="row hide-for-small-only">
+        <ul class="b-sidebar">
+            <a href="#" id="facebook">
+                <li class="facebook"><i class="fa fa-facebook"></i></li>
+            </a><a href="#" id="linkedin">
+            <li class="linkedin"><i class="fa fa-linkedin"></i></li>
+        </a><a href="#" id="google-plus">
+            <li class="google-plus"><i class="fa fa-google-plus"></i></li>
+        </a><a href="#" id="twitter">
+            <li class="twitter"><i class="fa fa-twitter"></i></li>
+        </a><a href="#" id="email"
+               message="mailto:?subject=Besserer%20Kunden%26shy%3Bservice%20ohne%20Mehr%26shy%3Baufwand&body=Öffentliche Verkehrs&shy;betriebe & Open Data%0A%0ARead%20More%3A%0A%0A">
+            <li class="email"><i class="fa fa-envelope"></i></li>
+        </a>
+        </ul>
+    </div>
+
+    
+    <section class="b-page-section">
+        <div class="row">
+            <aside class="large-4 columns">
+                <h3>Herausforderung:</h3>
+            </aside>
+            <div class="large-7 columns end">
+                
+<p>
+    Viele Nutzerinnen und Nutzer öffentlicher Verkehrsbetriebe möchten sich gerne per Smartphone über Haltestellen,
+    Ankunftszeiten und Verspätungen informieren. Diese Apps selbst zu entwickeln ist aber sehr teuer und oft fehlt den
+    Betreibern der öffentlichen Nahverkehrsunternehmen dazu die nötige Expertise.
+</p>
+
+
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section class="b-page-section">
+        <div class="row">
+            <aside class="large-4 columns">
+                <h3>Lösung:</h3>
+            </aside>
+            <div class="large-7 columns end">
+                
+<p>
+    <span class="float-img">
+        <img src="static/img/studies/tfl-1.jpg" alt="Transport for London"/>
+        <span class="caption">
+            Foto von <a href="https://www.flickr.com/photos/dgmckelvey/" target="_blank">David McKelvey</a>
+            - <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/" target="_blank">CC BY-NC-ND 2.0</a>
+        </span>
+    </span>
+    Die <a href="https://tfl.gov.uk/" target="_blank">Londoner Verkehrsbetriebe</a> (Transport for London,
+    TfL) verfolgen die Strategie, ihre Daten zu öffnen, sodass möglichst viele solcher Apps von freien
+    Entwicklern erstellt werden können, die dann wiederum den Nutzerinnen und Nutzern des öffentlichen
+    Nahverkehrs helfen.
+</p>
+
+
+
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section class="b-page-section">
+        <div class="row">
+            <aside class="large-4 columns">
+                <h3>Verwendete Datensätze:</h3>
+            </aside>
+            <div class="large-7 columns end">
+                
+<p>
+    Die von <a href="https://tfl.gov.uk/info-for/open-data-users/data-feeds#on-this-page-1" target="_blank">TfL
+    bereitgestellten Datensätze</a> beinhalten:
+</p>
+<ul>
+    <li>Fahrpläne</li>
+    <li>Preise</li>
+    <li>Haltestellen & Infrastruktur (Aufzüge etc.)</li>
+    <li>Reiseplanung & Status (aktuelle Ankunfts- & Abfahrtzeiten)</li>
+    <li>Aktuelle Unterbrechungen & geplante Bauarbeiten</li>
+    <li>Routen & Linien (geographisch & topologisch)</li>
+</ul>
+<p>Auf der Webseite von TfL ist nachzulesen, wie oft die Datensätze aktualisiert werden - manche alle 30 Sekunden, wie
+    im Fall von Änderungen von U-Bahngleisen, andere nur jährlich, wie beispielsweise die Anzahl an Passagieren.</p>
+
+</p>
+
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section class="b-page-section">
+        <div class="row">
+            <aside class="large-4 columns">
+                <h3>Wer profitiert?</h3>
+            </aside>
+            <div class="large-7 columns end">
+                
+<p>
+    Alle, die die öffentlichen Verkehrsmittel in London nutzen sowie die Londoner Verkehrsbetriebe selbst, die nun
+    zufriedenere und besser informierte Kundinnen und Kunden haben.
+</p>
+
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section class="b-page-section">
+        <div class="row">
+            <aside class="large-4 columns">
+                <h3>Und so funktioniert's:</h3>
+            </aside>
+            <div class="large-7 columns end">
+                
+                <div class="info side-info light">
+                    
+<!-- steckbrief -->
+<div>
+    <h6>So stellt TfL seine Daten zur Verfügung:</h6>
+
+    <ul>
+        <li>Statische Datensätze, die sich selten verändern</li>
+        <li>Feeds – Datensätze die regelmäßig aktualisiert werden</li>
+        <li>APIs (Application Programming Interface)</li>
+    </ul>
+    <p>
+        Datensätze werden in der Regel im XML-Format veröffentlicht.
+    </p>
+</div>
+
+
+
+                </div>
+                
+                <div class="e-expandable">
+                    
+<p>
+    John, seit vielen Jahren Mitarbeiter im Bereich des Kundenservice der Londoner Verkehrsbetriebe erreichten über die
+    Jahre mehr und mehr Anfragen, warum keine Fahrpläne per App abrufbar seien. Auch mehrten sich Beschwerden, warum es
+    nicht möglich sei, sich auf dem Handy unterwegs über Verspätungen zu informieren. Doch so sehr John und seine
+    Kolleginnen und Kollegen diese Forderungen nachvollziehen konnten, wussten sie nur wenig darüber, wie man solche
+    Apps entwickelt. Da sie jedoch von der Sinnhaftigkeit dieser Anwendungen überzeugt waren, überlegten sie sich, wie
+    es möglich sein könnte, dem Wunsch der Kunden nachzukommen. Daraus entstand ein Prozess, bei dem Transport for
+    London langsam seine Daten öffnete, damit Entwickler und Entwicklerinnen diese für die Erschaffung von Apps für den
+    öffentlichen Nahverkehr nutzen konnten.
+</p>
+<p>
+    <span class="float-img"><img src="static/img/studies/tfl-2.png" alt="Transport for London"/></span>
+    Im Jahr 2009 richtete TfL zunächst einen speziellen Bereich für Entwickler auf seiner Webseite ein. Seit 2010 gibt
+    es den „London Datastore”, das Open Data Portal der „Greater London Authority” (GLA), in dem auch TfL seine
+    Datensätze veröffentlicht.
+</p>
+<p>
+    2014 nutzen bereits 362 Smartphone Apps Daten von TfL. Daten zeigen, wie viel Zeit durch
+    Verkehrsunterbrechungen jährlich verloren geht, welchen Geldwert Verkehrsteilnehmende der verlorenen Zeit beimessen,
+    sowie mittels Schätzungen, wie viele Reisende mithilfe von TfL-basierten Apps diese Unterbrechungen umgehen konnten.
+    Daraus basiened
+    schätze Deloitte den Wert der Zeit, die dank neuen Anwendungen gespart werden konnte, im Jahr 2012 auf zwischen
+    £15m-£58m ein. Die
+    Kostenersparnis für Transport for London (im Vergleich zur Entwicklung der Apps durch TfL selbst) wird wie folgt
+    geschätzt:
+
+<blockquote>
+    „It is possible to conclude that TfL have so far saved between £15m-£42m through opening raw data to the app
+    market, rather than developing all its apps in-house.” (Hogge 2015, S. 14).
+</blockquote>
+</p>
+<p>
+    <span class="float-img"><img src="static/img/studies/tfl-3.png" alt="Transport for London"/></span>
+    Die Daten von TfL entsprechen allerdings nicht vollständig dem Konzept von Open Data. So müssen sich Nutzerinnen und
+    Nutzer beispielsweise registrieren und den Zweck angeben, für den die Daten verwendet werden. Die Datenlizenz ist
+    zwar grundsätzlich angelehnt an die Open Government Licence 2.0, hat aber zusätzliche Einschränkungen, wie
+    beispielsweise eine Limitierung des API-Zugriffs. Im Jahr 2013 waren über 5000 Nutzer registriert.
+</p>
+<p>
+    Dabei werden die Daten von TfL nicht nur für die Entwicklung von Apps für den öffentlichen Nahverkehr genutzt. Auch
+    bei der Bestimmung günstiger Standorte für die Eröffnung von Geschäften sind diese Daten nützlich. Auf diese Weise
+    nutzt beispielsweise die Firma GeoLytix, ein anderes Beispiel unseres Showrooms, die Daten von TfL. Die Wissenschaft
+    wiederum verwendet Daten von TfL, um etwa Verkehrssicherheit zu erforschen. Ein Beispiel dafür ist das Center for
+    Advanced Spatial Analysis am University College London, das Visualisierungen von Verkehrsströmen erstellt.
+
+</p>
+
+</p>
+
+                    <span class="e-read-more js-more-toggle" data-show-less="Weniger anzeigen">Weiter lesen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section class="b-page-section">
+        <div class="row">
+            <aside class="large-4 columns">
+                <h3>Quellen:</h3>
+            </aside>
+            <div class="large-7 columns end text-left">
+                
+<p>
+    Transport for London (2015): <em>Open Data Users</em>. Siehe: <a href="https://tfl.gov.uk/info-for/open-data-users/"
+                                                                     target="_blank">https://tfl.gov.uk/info-for/open-data-users/</a>
+</p>
+<p>
+    Deloitte (2013): <em>Market Assessment of Public Sector Information</em>. Appendix 6: Transport Sector Case Study.
+    pp.
+    194-204. Verfügbar unter:
+    <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/198905/bis-13-743-market-assessment-of-public-sector-information.pdf"
+       target="_blank">https://www.gov.uk/government/
+        <wbr>
+        uploads/system/uploads/attachment_data/
+        <wbr>
+        file/198905/bis-13-743-market-assessment-of-public-sector-information.pdf</a>
+</p>
+
+<p>
+    Hogge, Becky (2015): <em>Open Data. Six Sories about Impact in the UK</em>. Commissioned by Omidyar Network, pp.
+    10-16.
+    Verfügbar unter:
+    <a href="https://www.omidyar.com/sites/default/files/file_archive/insights/Open%20Data_Six%20Stories%20About%20Impact%20in%20the%20UK/OpenData_CaseStudies_Report_complete_DIGITAL_102715.pdf"
+       target="_blank">https://www.omidyar.com/
+        <wbr>
+        sites/default/
+        <wbr>
+        files/file_archive/insights/
+        <wbr>
+        OpenData_SixStoriesAboutImpactintheUK/
+        <wbr>
+        OpenData_CaseStudies_Report_
+        <wbr>
+        complete_DIGITAL_102715.pdf</a>
+
+</p>
+<p>Reed, Simon (2013). <em>Transport for London – Using Tools, Analytics and
+    Data to Inform Passengers</em>. Verfügbar unter:
+    <a href="http://www.lta.gov.sg/ltaacademy/doc/13Sep096-Reed_TfL-InformPassengers.pdf" target="_blank">http://www.lta.gov.sg/ltaacademy/doc/13Sep096-Reed_TfL-InformPassengers.pdf</a>
+
+</p>
+
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- read next section -->
+    
+    
+    
+    
+
+    <div class="b-divider m-next small-padding impact-public">
+        <div class="row">
+            <div class="medium-6 medium-offset-6 columns end text-right">
+                <h4>Weiter lesen:</h4>
+                <a href="case-mit-offenen-verwaltungsdaten-energie-sparen.html"
+                   class="impact-public">
+                    <h5>Mit offenen Ver&shy;waltungs&shy;daten Energie sparen</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end of read next -->
+</main>
+
+<script src="static/js/case-study-scripts.js"></script>
+<script src="static/js/enlarge-images.js"></script>
+
+
+
+
+<!--- END big Footer -->
+<div class="b-copyright">
+    <div class="row vertical-central">
+        <div class="column">
+            <a class="e-cc-badge" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img
+                    alt="Creative Commons License" style="border-width:0"
+                    src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a>
+            This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. <a href="impressum.html">Impressum</a>.
+        </div>
+        <div class="column"></div>
+        <div class="column logos">
+            <a class="e-partner-logo bigger" href="http://www.stiftung-nv.de/" target="_blank"><img
+                    src="static/img/partners/snv_weiss.png" alt=""></a>
+        </div>
+        <div class="column logos">
+            <a class="e-partner-logo big" href="http://www.okfn.de/" target="_blank"><img
+                    src="static/img/partners/okfn-logo.png" alt=""></a>
+        </div>
+    </div>
+</div>
+
+<div class="govlab-opensource" style="background-color: #222; padding: 12px 0 15px; text-align:
+center; font-family: 'proxima-nova', sans-serif, 'Helvetica Neue', Helvetica, Roboto, Arial,
+sans-serif;">
+    <a onmouseover="this.style.opacity=1; this.style.transform='scale(1.1)'; this.style.
+transition='all .7s ease';" onmouseout="this.style.opacity=.3; this.style.transform='scale(1)';
+this.style.transition='all 1s ease'" style="color:#fff; opacity:.3; text-decoration:none; font-size:
+1rem; vertical-align: -3px;border-width:0; display: inline-block;"
+       href="http://www.thegovlab.org/project-govlab-open-source.html"
+       target="_blank">
+        Powered by <img style="max-height: 24px; margin-left: 8px;vertical-align: -5px;"
+                        alt="Govlab Open Source" src="https://raw.githubusercontent.com/GovLab/govlab-opensource/master/
+img/govlab-opensource-white.png"/>
+    </a>
+</div>
+
+<div id="overlay"></div>
+
+<script src="static/vendor/slick.min.js"></script>
+<script src="static/vendor/EasePack.min.js"></script>
+<script src="static/vendor/rAF.js"></script>
+<script src="static/vendor/TweenLite.min.js"></script>
+<script src="static/vendor/feed.min.js"></script>
+<script src="static/vendor/prism.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.js"></script>
+
+<script>
+    $(document).foundation();
+</script>
+
+<script type="text/javascript" src="./static/js/scripts.js"></script>
+<script type="text/javascript" src="./static/js/mobile-nav-dropdown.js"></script>
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(["setDomains", ["*.datenwirken.de", "*.daten.show", "*.daten.show", "*.datenwirken.de"]]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+        var u = "//piwik.okfn.de/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', 17]);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<noscript>
+    <p><img src="//piwik.okfn.de/piwik.php?idsite=17" style="border:0;" alt=""/></p>
+</noscript>
+<!-- End Piwik Code -->
+
+
+
+</body>
+</html>

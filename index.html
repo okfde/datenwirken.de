@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>datenwirken.de - offene daten in der praxis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#009588">
+    <meta name="msapplication-navbutton-color" content="#009588">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#009588">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="static/vendor/normalize.css">
+    <link rel="stylesheet" href="static/vendor/slick.css">
+    <link rel="stylesheet" href="static/vendor/prism.css"/>
+    <link rel="stylesheet" href="static/styles/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- needed up here because of scripts in child templates -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="icon" type="image/ico" href="static/img/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="static/img/favicon-16x16.png"/>
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@snv_berlin" />
+
+    
+        
+        
+    
+
+</head>
+
+<body id="open-data-impact-homepage">
+
+
+<!-- header goes here -->
+<header class="b-top-nav m-transparent m-fixed">
+
+    <div class="e-nav-group m-left e-social-media dropdown">
+        <div class="e-nav-item"><i class="e-social-media-item fa fa-twitter"></i></div>
+        <ul class="m-transparent">
+            <li>
+                <a href="https://twitter.com/snv_berlin" class="e-nav-item" target="_blank">
+                    <i class="e-social-media-item fa fa-twitter"></i>snv_berlin
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/okfde" class="e-nav-item" target="_blank">
+                    <i class="e-social-media-item fa fa-twitter"></i>okfde
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    
+    <div class="e-nav-group m-right hide-for-small-only">
+        <a href="supporters.html" class="e-nav-item" id="nav-about">Befürworter</a>
+        <a href="about.html" class="e-nav-item" id="nav-about">Hintergrund</a>
+    </div>
+    <div class="e-nav-group m-right show-for-small-only dropdown">
+        <a class="e-nav-item activate-dropdown">
+            <i class="fa fa-ellipsis-h"></i>
+        </a>
+        <ul class="m-transparent">
+            <li>
+                <a href="supporters.html" class="e-nav-item">
+                    Befürworter
+                </a>
+            </li>
+            <li>
+                <a href="about.html" class="e-nav-item">
+                    Hintergrund
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <a class="e-logo" href="./">
+        <img src="static/img/datenwirken_logo.svg" alt="datenwirken.de - Offene Daten in der Praxis"/>
+    </a>
+</header>
+
+
+
+
+<main role="main">
+
+    <div class="b-top-section home">
+        <div class="e-shade"></div>
+        <hgroup class="e-titles">
+            <h1 class="e-main-title">Offene Daten wirken!</h1>
+            <h2 class="e-tagline">SO VERBESSERN SIE UNSERE GESELLSCHAFT:</h2>
+        </hgroup>
+        <div id="explore-button">
+            <a id="explore-link" href="#explore-the-data" class="b-button m-dark-blue">Beispiele
+                ansehen</a>
+        </div>
+    </div>
+
+    <div class="b-page-section m-impact-section m-yellow">
+        <div class="row m-spaced"></div>
+        <div class="row">
+            <span id="trigger-3"></span>
+            <div class="large-5 large-offset-1 columns">
+                <h2 class="">Chancen schaffen</h2>
+                <p>
+                    3
+                    Beispiele</p>
+                <i class="material-icons m-xl-badge m-gray" id="badge-3">trending_up</i>
+                </p>
+            </div>
+            <div class="large-5 columns end">
+                <p class="b-description">
+                    Offene Daten sind die Basis neuer Geschäftsideen, erzeugen wirtschaftliches Wachstum und fördern
+                    Innovationen in Wirtschaft, Verwaltung und Zivilgesellschaft.
+                    <div class="e-action">
+                      <a class="b-button m-naked" href="#" id="economic-button">Zu den Beispielen<i class="material-icons">arrow_forward</i></a>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="b-page-section m-impact-section m-fuschia">
+        <div class="row">
+            <span id="trigger-4"></span>
+            <div class="large-5 large-offset-1 columns">
+                <h2 class="">Probleme lösen</h2>
+                <p>
+                    7
+                    Beispiele</p>
+                <i class="material-icons m-xl-badge" id="badge-4">public</i>
+                </p>
+            </div>
+            <div class="large-5 columns end">
+                <p class="b-description">
+                    Offene Daten ermöglichen die Zusammenarbeit verschiedener Akteure zur Lösung gesellschaftlicher
+                    Probleme, ob im Verkehr, bei der Energiewende oder im Gesundheitsbereich.
+                    <div class="e-action">
+                      <a class="b-button m-naked" href="#" id="public-button">Zu den Beispielen<i class="material-icons">arrow_forward</i></a>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="b-page-section m-impact-section m-blue">
+        <div class="row">
+            <span id="trigger-1"></span>
+            <div class="large-5 large-offset-1 columns">
+                <h2 class="">Besser regieren</h2>
+                <p>
+                    3
+                    Beispiele</p>
+                <i class="material-icons m-xl-badge" id="badge-1">account_balance</i>
+                </p>
+            </div>
+            <div class="large-5 columns end">
+                <p class="b-description">
+                    Offene Daten sind eine wichtige Quelle faktenbasierter Entscheidungen. Diese führen zu besseren
+                    Ergebnissen, lassen sich leichter nachvollziehen und besser vermitteln. Das stärkt die Legitimation
+                    politischer Beschlüsse und die Identifikation mit der Demokratie.
+                    <div class="e-action">
+                      <a class="b-button m-naked" href="#" id="government-button">Zu den Beispielen<i class="material-icons">arrow_forward</i></a>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="b-page-section m-impact-section m-orange">
+        <div class="row">
+            <span id="trigger-2"></span>
+            <div class="large-5 large-offset-1 columns">
+                <h2 class="">Menschen befähigen</h2>
+                <p>
+                    5
+                    Beispiele</p>
+                <i class="material-icons m-xl-badge m-gray" id="badge-2">person_pin</i>
+                </p>
+            </div>
+            <div class="large-5 columns end">
+                <p class="b-description ">
+                    Offene Daten informieren. So können Menschen bessere Entscheidungen treffen. Wo wohnen? Welchen Weg
+                    zur Arbeit wählen? Welche Ausbildung beginnen? Gute Entscheidungen sind wegweisend für das eigene
+                    Leben und sparen der Gesellschaft Ressourcen.
+                    <div class="e-action">
+                      <a class="b-button m-naked" href="#" id="citizens-button">Zu den Beispielen<i class="material-icons">arrow_forward</i></a>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <a name="explore" id="a-explore"><!-- do not remove, this is used as anchor point --></a>
+
+    <!-- section selection removed to _section_selection.html -->
+
+    <div class="b-page-section m-no-bottom-padding">
+        <div class="tabs-content" data-tabs-content="explore-tabs" id="explore-content">
+            <div class="tabs-panel is-active" id="panel2">
+                <div class="row">
+                    <div class="medium-2 large-offset-1 columns">
+                        <a href="#" class="b-button js-filter selected" data-filter="*" id="see-all-btn-2">
+                            <i class="material-icons m-lg">replay</i>
+                            Alle anzeigen
+                        </a>
+                    </div>
+                    <div class="medium-2 columns">
+                        <a href="#" class="b-button m-yellow js-filter" id="economic-filter" data-filter="impact-economic">
+                            <i class="material-icons m-lg">trending_up</i>
+                            Chancen schaffen
+                        </a>
+                    </div>
+                    <div class="medium-2 columns">
+                        <a href="#" class="b-button m-fuschia js-filter" id="public-filter" data-filter="impact-public">
+                            <i class="material-icons m-lg">public</i>
+                            Probleme lösen
+                        </a>
+                    </div>
+                    <div class="medium-2 columns">
+                        <a href="#" class="b-button m-blue js-filter" id="government-filter" data-filter="impact-government">
+                            <i class="material-icons m-lg">account_balance</i>
+                            Besser regieren
+                        </a>
+                    </div>
+                    <div class="medium-2 columns end">
+                        <a href="#" class="b-button m-orange js-filter" id="citizens-filter" data-filter="impact-citizens">
+                            <i class="material-icons m-lg">person_pin</i>
+                            Menschen befähigen
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="b-page-section m-no-top-padding" id="results">
+        <div class="grid">
+            
+            <div class="e-card impact-economic">
+                <a href="case-zur-richtigen-zeit-am-richtigen-ort.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/geodata.jpg)"></div>
+                        <p class="e-case-name">Zur richtigen Zeit am richtigen Ort</p>
+                        <p class="e-case-description">Geschäfts&shy;strategien mit offenen Geodaten entwickeln.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-economic">
+                <a href="case-problemlos-von-a-nach-b.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/ally.jpg)"></div>
+                        <p class="e-case-name">Problemlos von A nach B</p>
+                        <p class="e-case-description">Auch in einer fremden Stadt. Auch wenn die Bahn gerade nicht fährt.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-citizens">
+                <a href="case-open-data-fur-eine-bessere-gesundheitsversorgung.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/atu.jpg)"></div>
+                        <p class="e-case-name">Open Data für eine bessere Gesund&shy;heits&shy;versorgung</p>
+                        <p class="e-case-description">„A tu servicio” aus Uruguay.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-public">
+                <a href="case-besserer-kundenservice-ohne-mehraufwand.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/tfl.jpg)"></div>
+                        <p class="e-case-name">Besserer Kunden&shy;service ohne Mehr&shy;aufwand</p>
+                        <p class="e-case-description">Öffentliche Verkehrs&shy;betriebe & Open Data</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-public">
+                <a href="case-mit-offenen-verwaltungsdaten-energie-sparen.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/husets.jpg)"></div>
+                        <p class="e-case-name">Mit offenen Ver&shy;waltungs&shy;daten Energie sparen</p>
+                        <p class="e-case-description">ob als Privat&shy;person oder als Kommune</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-government">
+                <a href="case-kunst-fur-alle.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/rijks.jpg)"></div>
+                        <p class="e-case-name">Kunst für alle</p>
+                        <p class="e-case-description">Digitale Meister&shy;werke zum genießen, lernen, experimentieren und remixen</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-citizens">
+                <a href="case-abi-oder-ausbildung.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/skills.jpg)"></div>
+                        <p class="e-case-name">Abi oder Ausbildung?</p>
+                        <p class="e-case-description">Die richtige Wahl mit offenen Daten treffen</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-government">
+                <a href="case-kommunalpolitik-entstaubt.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/muc.jpg)"></div>
+                        <p class="e-case-name">Kommunal&shy;politik entstaubt</p>
+                        <p class="e-case-description">Besser verstehen, was in deiner Stadt passiert</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-public">
+                <a href="case-fur-ein-storungsfreies-und-schnelles-internet.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/mLab.jpg)"></div>
+                        <p class="e-case-name">Für ein störungs&shy;freies und schnelles Internet</p>
+                        <p class="e-case-description">Das Gemeinschafts&shy;projekt mLab</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-economic">
+                <a href="case-neue-ausflugsziele-entdecken.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/naturtrip.jpg)"></div>
+                        <p class="e-case-name">Neue Ausflugsziele entdecken</p>
+                        <p class="e-case-description">Mit öffentlichen Verkehrsmitteln und Open-Data </p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-public">
+                <a href="case-defekte-aufzuge-in-echtzeit-erkennen.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/aufzugswaechter.png)"></div>
+                        <p class="e-case-name">Defekte Aufzüge in Echtzeit erkennen</p>
+                        <p class="e-case-description">Bundesweit den Betriebszustand von Aufzügen erfassen</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-citizens">
+                <a href="case-die-passende-klinische-studie-finden.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/viomedo.jpg)"></div>
+                        <p class="e-case-name">Die passende klinische Studie finden</p>
+                        <p class="e-case-description">Vom medizinischen Fortschritt profitieren</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-citizens">
+                <a href="case-selbststandige-fortbewegung.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/blindsquare.jpg)"></div>
+                        <p class="e-case-name">Selbstständige Fortbewegung</p>
+                        <p class="e-case-description">Für Blinde und sehbehinderte Menschen</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-public">
+                <a href="case-grundschulplatze-besser-zuordnen.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/einschulungsbereicherechner.jpg)"></div>
+                        <p class="e-case-name">Grundschulplätze besser zuordnen</p>
+                        <p class="e-case-description">Der Einschulungsbereicherechner im Raum Berlin</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-government">
+                <a href="case-einsparpotenzial-erkennen.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/nhs.jpg)"></div>
+                        <p class="e-case-name">Einsparpotenzial erkennen</p>
+                        <p class="e-case-description">Der National Health Service und offene Daten</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-citizens">
+                <a href="case-schulrenovierungen-einfordern.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/sanierung.png)"></div>
+                        <p class="e-case-name">Schulrenovierungen einfordern</p>
+                        <p class="e-case-description">Eine Elterninitiative zur Kategorisierung von Renovierungsbedarf an Schulen</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-public">
+                <a href="case-nachwuchsforderung-durch-do-it-yourself-datenerhebung.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/sensebox.jpg)"></div>
+                        <p class="e-case-name">Nachwuchsförderung durch Do-it-yourself-Datenerhebung</p>
+                        <p class="e-case-description">Die Kiste mit Sinn</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-public">
+                <a href="case-dem-stau-entkommen.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image"
+                             style="background-image: url(./static/img/banners/thumbs/verkehr-in-bonn.png)"></div>
+                        <p class="e-case-name">Dem Stau entkommen</p>
+                        <p class="e-case-description">OpenData trifft Nachhaltige Mobilität</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <!-- additional more coming soon card -->
+            <div class="e-card impact-comming-soon">
+                <div class="e-card-inner">
+                    <div class="e-case-image">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                    <p class="e-case-name">Weitere Beispiele folgen</p>
+                    <p class="e-case-description">
+                        Vorschläge sind <a href="mailto:opendata@stiftung-nv.de">willkommen</a>. Oder Tweet mit
+                        #datenwirken an <a href="https://twitter.com/okfde" class="e-nav-item"
+                                           target="_blank">
+                        <i class="e-social-media-item fa fa-twitter"></i>okfde</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-sticky m-purple m-hidden" id="upcoming-section">
+        <div class="row">
+            <i class="material-icons e-close js-close-sticky">close</i>
+            <h2>Diese Sammlung wird laufend erweitert!</h2>
+            <p>
+                Vorschläge sind willkommen: <a href="mailto:opendata@stiftung-nv.de">opendata@stiftung-nv.de</a>.
+            </p>
+            <p>
+                Oder Tweet mit #datenwirken an <a href="https://twitter.com/okfde" class="e-nav-item" target="_blank">
+                <i class="e-social-media-item fa fa-twitter"></i>okfde</a>.
+            </p>
+        </div>
+    </div>
+
+</main><!--@main-->
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
+<script src="static/js/filters.js"></script>
+<script src="static/js/tweens.js"></script>
+
+
+
+
+<!--- END big Footer -->
+<div class="b-copyright">
+    <div class="row vertical-central">
+        <div class="column">
+            <a class="e-cc-badge" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img
+                    alt="Creative Commons License" style="border-width:0"
+                    src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a>
+            This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. <a href="impressum.html">Impressum</a>.
+        </div>
+        <div class="column"></div>
+        <div class="column logos">
+            <a class="e-partner-logo bigger" href="http://www.stiftung-nv.de/" target="_blank"><img
+                    src="static/img/partners/snv_weiss.png" alt=""></a>
+        </div>
+        <div class="column logos">
+            <a class="e-partner-logo big" href="http://www.okfn.de/" target="_blank"><img
+                    src="static/img/partners/okfn-logo.png" alt=""></a>
+        </div>
+    </div>
+</div>
+
+<div class="govlab-opensource" style="background-color: #222; padding: 12px 0 15px; text-align:
+center; font-family: 'proxima-nova', sans-serif, 'Helvetica Neue', Helvetica, Roboto, Arial,
+sans-serif;">
+    <a onmouseover="this.style.opacity=1; this.style.transform='scale(1.1)'; this.style.
+transition='all .7s ease';" onmouseout="this.style.opacity=.3; this.style.transform='scale(1)';
+this.style.transition='all 1s ease'" style="color:#fff; opacity:.3; text-decoration:none; font-size:
+1rem; vertical-align: -3px;border-width:0; display: inline-block;"
+       href="http://www.thegovlab.org/project-govlab-open-source.html"
+       target="_blank">
+        Powered by <img style="max-height: 24px; margin-left: 8px;vertical-align: -5px;"
+                        alt="Govlab Open Source" src="https://raw.githubusercontent.com/GovLab/govlab-opensource/master/
+img/govlab-opensource-white.png"/>
+    </a>
+</div>
+
+<div id="overlay"></div>
+
+<script src="static/vendor/slick.min.js"></script>
+<script src="static/vendor/EasePack.min.js"></script>
+<script src="static/vendor/rAF.js"></script>
+<script src="static/vendor/TweenLite.min.js"></script>
+<script src="static/vendor/feed.min.js"></script>
+<script src="static/vendor/prism.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.js"></script>
+
+<script>
+    $(document).foundation();
+</script>
+
+<script type="text/javascript" src="./static/js/scripts.js"></script>
+<script type="text/javascript" src="./static/js/mobile-nav-dropdown.js"></script>
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(["setDomains", ["*.datenwirken.de", "*.daten.show", "*.daten.show", "*.datenwirken.de"]]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+        var u = "//piwik.okfn.de/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', 17]);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<noscript>
+    <p><img src="//piwik.okfn.de/piwik.php?idsite=17" style="border:0;" alt=""/></p>
+</noscript>
+<!-- End Piwik Code -->
+
+
+
+</body>
+</html>
