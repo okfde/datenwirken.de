@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp; python build.py runserver",
+    "build": "gulp",
     "deploy": "git push origin;python build.py deploy origin",
     "production": "git push okfn; python build.py deploy okfn"
   },
@@ -20,7 +21,7 @@
   },
   "homepage": "https://github.com/mocxd/open-data-impact-case-studies#readme",
   "devDependencies": {
-    "gulp": "latest",
+    "gulp": "3.9.1",
     "gulp-cache": "^0.4.2",
     "gulp-changed": "^1.3.0",
     "gulp-image-resize": "^0.7.1",
