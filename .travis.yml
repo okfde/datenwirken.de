@@ -2,12 +2,13 @@ python:
 - '2.7'
 before_install:
 - gem install sass
+- sudo apt-get install graphicsmagick imagemagick
 install:
 - pip install --user -r requirements.txt
 - npm install
 script:
 - python build.py clean
-- gulp
+- npm run build
 - python build.py build
 - "./deploy.sh"
 cache:
